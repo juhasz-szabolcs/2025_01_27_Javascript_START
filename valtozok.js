@@ -19,9 +19,24 @@ var x = "alma";
 console.log(x); //A var változók újradefiniálhatók.
 
 
-console.log(typeof(2)); // number
-console.log(typeof(true)); // boolean
-console.log(typeof('Aladár')); // string
-console.log(typeof({name:'Béla', age: 42})); // object
-console.log(typeof(function f(a, b) {return a + b})); // function
-console.log(typeof(nonexisting)); // undefined
+// console.log(typeof(2)); // number
+// console.log(typeof(true)); // boolean
+// console.log(typeof('Aladár')); // string
+// console.log(typeof({name:'Béla', age: 42})); // object
+// console.log(typeof(function f(a, b) {return a + b})); // function
+// console.log(typeof(nonexisting)); // undefined
+
+
+
+console.log("Ez egy normál üzenet");
+console.warn("Ez egy figyelmeztetés!");
+console.error("Ez egy hibaüzenet!");
+
+console.time("időmérés");
+for (let i = 0; i < 1000000; i++) {} // Egy kis időigényes művelet
+console.timeEnd("időmérés");
+
+console.table([
+  { név: "Anna", kor: 25 },
+  { név: "Béla", kor: 30 }
+]);
